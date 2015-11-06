@@ -86,7 +86,7 @@ Make a histogram of the total number of steps taken each day
 qplot(step.total, binwidth=500, xlab="total number of steps of a day")
 ```
 
-![](PA1_template1_files/figure-html/unnamed-chunk-5-1.png) 
+![](Figures/plot1.png) 
 
 
 Calculate and report the mean and median of the total number of steps taken per day

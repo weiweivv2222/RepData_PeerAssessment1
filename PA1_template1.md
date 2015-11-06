@@ -117,7 +117,7 @@ step.average=aggregate(x=list(steps=data$steps), by=list(interval = data$interva
 ggplot(step.average, aes(x=interval,y=steps)) + geom_line(colour="blue") + xlab("Time interval") + ylab ("Average number of steps")
 ```
 
-![](PA1_template1_files/figure-html/unnamed-chunk-7-1.png) 
+![](Figures/Rplot2.png)
 
 Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -181,7 +181,7 @@ total.date=tapply(data.new$steps, data.new$date, sum, na.rm=T)
 qplot(total.date, binwidth=500, xlab="total number of steps of a day")
 ```
 
-![](PA1_template1_files/figure-html/unnamed-chunk-11-1.png) 
+![](Figures/Rplot3.png)
 
 
 
@@ -224,7 +224,7 @@ average.new= aggregate(steps ~ interval + day, data=data.new, mean)
 ggplot(average.new, aes(x=interval, y= steps)) + geom_line() + facet_grid(day~.)+xlab("5-minute interval") + ylab("Number of steps")
 ```
 
-![](PA1_template1_files/figure-html/unnamed-chunk-14-1.png) 
+![](Figures/Rplot4.png)
 
 
 
